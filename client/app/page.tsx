@@ -18,8 +18,8 @@ const Page: FC<Props> = (props) => {
   return (
     <div>
       <Heading
-        title="ELearning"
-        description="ELearning is a platform for students to learn and get help from teachers"
+        title="Academia"
+        description="Academia is a platform for students to learn and get help from teachers"
         keywords="Prograaming,MERN,Redux,Machine Learning"
       />
       <Header
@@ -30,7 +30,7 @@ const Page: FC<Props> = (props) => {
         route={route}
       />
       <Hero />
-      <Courses />
+      {/* <Courses /> */}
       <Reviews />
       <FAQ />
       <Footer />
