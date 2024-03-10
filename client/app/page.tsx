@@ -30,7 +30,6 @@ const Page: FC<Props> = (props) => {
         route={route}
       />
       <Hero />
-      {/* <Courses /> */}
       <Reviews />
       <FAQ />
       <Footer />

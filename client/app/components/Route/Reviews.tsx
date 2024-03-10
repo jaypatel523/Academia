@@ -66,7 +66,7 @@ const Reviews = (props: Props) => {
         <div className="800px:w-[50%] w-full">
           <h3 className={`${styles.title} 800px:!text-[40px] flex flex-col`}>
             Learn new skills with
-            <span className="text-gradient">Top Educators by Academia</span> 
+            <span className="text-gradient">Top Educators By Academia</span> 
             {/* Our Students Are <span className="text-gradient">Our Strength</span>{" "}
             <br /> See What They Say About Us */}
           </h3>
