@@ -21,9 +21,8 @@ const page = (props: Props) => {
           <div className="1500px:w-[16%] w-1/5">
             <AdminSidebar />
           </div>
-          <div className="w-[85%]">
-            <DashboardHero />
-            <AllCourses />
+          <div className="w-[85%] h-[100vh] text-black flex items-center justify-center text-4xl">
+            List of courses 
           </div>
         </div>
       </AdminProtected>
