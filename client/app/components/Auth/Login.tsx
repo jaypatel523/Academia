@@ -8,6 +8,10 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
+import { FaGithub, FaGithubSquare } from "react-icons/fa";
+import { RxGithubLogo } from "react-icons/rx";
+
+import { FaSquareGithub } from "react-icons/fa6";
 import { styles } from "../../../app/styles/style";
 import { useLoginMutation } from "@/redux/features/auth/authApi";
 import { toast } from "react-hot-toast";
@@ -55,7 +59,7 @@ const Login: FC<Props> = ({ setRoute, setOpen,refetch }) => {
 
   return (
     <div className="w-full">
-      <h1 className={`${styles.title}`}>Login with ELearning</h1>
+      <h1 className={`${styles.title}`}>Login with Academia</h1>
       <form onSubmit={handleSubmit}>
         <label className={`${styles.label}`} htmlFor="email">
           Enter your Email
@@ -117,9 +121,9 @@ const Login: FC<Props> = ({ setRoute, setOpen,refetch }) => {
           <FcGoogle size={30} className="cursor-pointer mr-2"
           onClick={() => signIn("google")}
           />
-          <AiFillGithub size={30} className="cursor-pointer ml-2" onClick={() => signIn("github")} />
+          <FaGithub size={30} className="cursor-pointer ml-2 bg-black rounded-full"  onClick={() => signIn("github")} />
         </div>
-        <h5 className="text-center pt-4 font-Poppins text-[14px]">
+        <h5 className="text-center pt-4 font-Poppins text-[14px] text-black dark:text-white">
           Not have any account?{" "}
           <span
             className="text-[#2190ff] pl-1 cursor-pointer"

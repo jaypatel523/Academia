@@ -9,11 +9,13 @@ type Props = {};
 
 const page = (props: Props) => {
   return (
-    <div>
+    <div 
+    // className="border text-black h-[100vh] flex items-center justify-center text-4xl"
+    >
       <AdminProtected>
         <Heading
-          title="Elearning - Admin"
-          description="ELearning is a platform for students to learn and get help from teachers"
+          title="Academia - Admin"
+          description="Academia is a platform for students to learn and get help from teachers"
           keywords="Programming,MERN,Redux,Machine Learning"
         />
         <div className="flex min-h-screen">

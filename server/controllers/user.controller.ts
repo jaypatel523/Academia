@@ -254,6 +254,7 @@ export const updateAccessToken = CatchAsyncError(
 // get user info
 export const getUserInfo = CatchAsyncError(
   async (req: Request, res: Response, next: NextFunction) => {
+    console.log("This is me")
     try {
       const userId = req.user?._id;
       getUserById(userId, res);

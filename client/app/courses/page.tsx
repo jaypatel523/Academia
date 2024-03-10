@@ -55,10 +55,10 @@ const Page = (props: Props) => {
             setOpen={setOpen}
             activeItem={1}
           />
-          <div className="w-[95%] 800px:w-[85%] m-auto min-h-[70vh]">
-            <Heading
-              title={"All courses - Elearning"}
-              description={"Elearning is a programming community."}
+          <div className="text-black dark:text-white w-[95%] 800px:w-[85%] m-auto min-h-[80vh] flex items-center justify-center text-4xl">
+            {/* <Heading
+              title={"All courses - Academia"}
+              description={"Academia is a programming community."}
               keywords={
                 "programming community, coding skills, expert insights, collaboration, growth"
               }
@@ -103,7 +103,10 @@ const Page = (props: Props) => {
                 courses.map((item: any, index: number) => (
                   <CourseCard item={item} key={index} />
                 ))}
-            </div>
+            </div> */}
+
+            Here we will add all the courses
+
           </div>
           <Footer />
         </>
