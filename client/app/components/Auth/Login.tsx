@@ -5,13 +5,9 @@ import * as Yup from "yup";
 import {
   AiOutlineEye,
   AiOutlineEyeInvisible,
-  AiFillGithub,
 } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
-import { FaGithub, FaGithubSquare } from "react-icons/fa";
-import { RxGithubLogo } from "react-icons/rx";
-
-import { FaSquareGithub } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 import { styles } from "../../../app/styles/style";
 import { useLoginMutation } from "@/redux/features/auth/authApi";
 import { toast } from "react-hot-toast";

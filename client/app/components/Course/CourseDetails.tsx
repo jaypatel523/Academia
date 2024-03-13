@@ -229,7 +229,7 @@ const CourseDetails = ({
                 </h4>
               </div>
               <div className="flex items-center">
-                {isPurchased ? (
+                {/* {isPurchased ? (
                   <Link
                     className={`${styles.button} !w-[180px] my-3 font-Poppins cursor-pointer !bg-[crimson]`}
                     href={`/course-access/${data._id}`}
@@ -243,7 +243,7 @@ const CourseDetails = ({
                   >
                     Buy Now {data.price}$
                   </div>
-                )}
+                )} */}
               </div>
               <br />
               <p className="pb-1 text-black dark:text-white">

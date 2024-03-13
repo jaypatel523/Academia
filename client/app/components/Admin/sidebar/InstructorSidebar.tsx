@@ -170,7 +170,7 @@ const Sidebar = () => {
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item
               title="Dashboard"
-              to="/admin"
+              to="/instructor"
               icon={<HomeOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -178,67 +178,22 @@ const Sidebar = () => {
 
             <Typography
               variant="h5"
-              sx={{ m: "15px 0 5px 25px" }}
-              className="!text-[18px] text-black dark:text-[#ffffffc1] capitalize !font-[400]"
-            >
-              {!isCollapsed && "Data"}
-            </Typography>
-            <Item
-              title="Users"
-              to="/admin/users"
-              icon={<GroupsIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-
-            <Item
-              title="Invoices"
-              to="/admin/invoices"
-              icon={<ReceiptOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-
-            <Typography
-              variant="h5"
               className="!text-[18px] text-black dark:text-[#ffffffc1] capitalize !font-[400]"
               sx={{ m: "15px 0 5px 20px" }}
             >
-              {!isCollapsed && "Customization"}
+              {!isCollapsed && "Content"}
             </Typography>
             <Item
-              title="Hero"
-              to="/admin/hero"
-              icon={<WebIcon />}
+              title="Create Course"
+              to="/instructor/create-course"
+              icon={<VideoCallIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="FAQ"
-              to="/admin/faq"
-              icon={<QuizIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Categories"
-              to="/admin/categories"
-              icon={<WysiwygIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-
-            <Typography
-              variant="h5"
-              className="!text-[18px] text-black dark:text-[#ffffffc1] capitalize !font-[400]"
-              sx={{ m: "15px 0 5px 20px" }}
-            >
-              {!isCollapsed && "Controllers"}
-            </Typography>
-            <Item
-              title="Manage Team"
-              to="/admin/team"
-              icon={<PeopleOutlinedIcon />}
+              title="Live Courses"
+              to="/instructor/courses"
+              icon={<OndemandVideoIcon />}
               selected={selected}
               setSelected={setSelected}
             />
@@ -252,23 +207,16 @@ const Sidebar = () => {
             </Typography>
             <Item
               title="Courses Analytics"
-              to="/admin/courses-analytics"
+              to="/instructor/courses-analytics"
               icon={<BarChartOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Orders Analytics"
-              to="/admin/orders-analytics"
-              icon={<MapOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
 
             <Item
-              title="Users Analytics"
-              to="/admin/users-analytics"
-              icon={<ManageHistoryIcon />}
+              title="Orders Analytics"
+              to="/instructor/orders-analytics"
+              icon={<MapOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
